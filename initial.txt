@@ -67,4 +67,4 @@ curl -L "https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_ins
 #sed -i 's|Exec=/usr/bin/code %U|Exec=/usr/bin/code --no-sandbox --user-data-dir=/root/.vscode-root-user %U|' /usr/share/applications/code.desktop
 
 # step 6: Paste this into the desktop icon Launcher -> command  box to get the desktop icon to work
-code --no-sandbox --user-data-dir=/root/.vscode-root-user
+#code --no-sandbox --user-data-dir=/root/.vscode-root-user
