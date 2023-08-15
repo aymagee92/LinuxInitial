@@ -14,6 +14,7 @@ sudo apt install python3-pip -y
 sudo apt install python3 -y
 sudo apt install sqlitebrowser -y
 sudo apt install firefox -y
+sudo apt install tmux -y
 
 # --- Step 3: Installing python packages ---
 pip install pandas
