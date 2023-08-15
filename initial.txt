@@ -32,10 +32,10 @@ mkdir Programs
 cd Desktop
 
 # --- Step 5: Downloading Visual Studio Code Installer ---
-curl -L -O "https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.81.0-1690980880_amd64.deb"
+curl -L "https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.81.0-1690980880_amd64.deb" -o vsc.deb
 
 # --- Step 6: Downloading IB Gateway Installer ---
-curl -L -O https://download2.interactivebrokers.com/installers/ibgateway/latest-standalone/ibgateway-latest-standalone-linux-x64.sh
+curl -L "https://download2.interactivebrokers.com/installers/ibgateway/latest-standalone/ibgateway-latest-standalone-linux-x64.sh" -o ibgateway.sh
 
 # --- STEP 7: Installing ThinkOrSwim ---
 
@@ -47,7 +47,7 @@ sudo apt install zulu-11 -y
 sudo update-alternatives --config java
 
 # --- Step 7.2: Downloading ThinkOrSwim Installer ---
-curl -L -O https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_installer.sh
+curl -L "https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_installer.sh" -o thinkorswim.sh
 
 
 # --- COMMANDS TO EXECUTE ON GUI TO DOWNLOAD SOFTWARES ---
@@ -64,25 +64,3 @@ curl -L -O https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_i
 
 # step 5: if using root, need to adjust settings in order for it to run
 #sed -i 's|Exec=/usr/bin/code %U|Exec=/usr/bin/code --no-sandbox --user-data-dir=/root/.vscode-root-user %U|' /usr/share/applications/code.desktop
-
-
-# IB GATEWAY
-# step 2: Making the script executable
-#chmod +x ibgateway-latest-standalone-linux-x64.sh
-
-# step 3: Beginning installation process
-#bash ibgateway-latest-standalone-linux-x64.sh
-
-# step 4: Removing the installer after installation
-#rm ibgateway-latest-standalone-linux-x64.sh
-
-
-# THINKORSWIM
-# step 8: making the script executable
-#chmod +x thinkorswim_installer.sh
-
-# step 9: running the installer
-#bash thinkorswim_installer.sh
-
-# step 10: removing the installer after installation
-#rm thinkorswim_installer.sh
