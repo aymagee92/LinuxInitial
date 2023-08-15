@@ -55,7 +55,7 @@ curl -L "https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_ins
 
 # VSC
 # step 2: Installing the downloaded packages.
-#sudo dpkg -i code.deb
+#sudo dpkg -i vsc.deb
 
 # step 3: Installing any missing dependencies.
 #sudo apt install -f
@@ -65,3 +65,6 @@ curl -L "https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_ins
 
 # step 5: if using root, need to adjust settings in order for it to run
 #sed -i 's|Exec=/usr/bin/code %U|Exec=/usr/bin/code --no-sandbox --user-data-dir=/root/.vscode-root-user %U|' /usr/share/applications/code.desktop
+
+# step 6: Paste this into the desktop icon Launcher -> command  box to get the desktop icon to work
+code --no-sandbox --user-data-dir=/root/.vscode-root-user
