@@ -28,6 +28,7 @@ pip install aiohttp
 pip install ib_insync
 
 # --- Step 4: Creating Programs Folder and navigating to Desktop
+cd ../
 cd Desktop
 mkdir Programs
 
