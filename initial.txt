@@ -28,8 +28,8 @@ pip install aiohttp
 pip install ib_insync
 
 # --- Step 4: Creating Programs Folder and navigating to Desktop
-mkdir Programs
 cd Desktop
+mkdir Programs
 
 # --- Step 5: Downloading Visual Studio Code Installer ---
 curl -L "https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.81.0-1690980880_amd64.deb" -o vsc.deb
