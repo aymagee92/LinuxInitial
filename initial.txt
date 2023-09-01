@@ -62,7 +62,7 @@ curl -L "https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_ins
 #sudo apt install -f
 
 # step 4: removing the installer after installation
-#rm code.deb
+#rm vsc.deb
 
 # step 5: if using root, need to adjust settings in order for it to run
 #sed -i 's|Exec=/usr/bin/code %U|Exec=/usr/bin/code --no-sandbox --user-data-dir=/root/.vscode-root-user %U|' /usr/share/applications/code.desktop
