@@ -17,16 +17,16 @@ sudo apt install firefox -y
 sudo apt install tmux -y
 
 # --- Step 3: Installing python packages ---
-pip install pandas
-pip install numpy
-pip install streamlit
-pip install openpyxl
-pip install mplfinance
-pip install plotly
-pip install scipy
-pip install requests
-pip install aiohttp
-pip install ib_insync
+sudo apt install python3-pandas -y
+sudo apt install python3-numpy -y
+pip install streamlit --break-system-packages
+sudo apt install python3-openpyxl -y
+pip install mplfinance --break-system-packages
+sudo apt install python3-plotly -y
+sudo apt install python3-scipy -y
+sudo apt install python3-requests -y
+sudo apt install python3-aiohttp -y
+pip install ib_insync --break-system-packages
 
 # --- Step 4: Creating Programs Folder and navigating to Desktop
 cd ../
