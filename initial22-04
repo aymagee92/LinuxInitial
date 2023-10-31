@@ -17,16 +17,16 @@ sudo apt install firefox -y
 sudo apt install tmux -y
 
 # --- Step 3: Installing python packages ---
-pip install pandas
-pip install numpy
-pip install streamlit
-pip install openpyxl
-pip install mplfinance
-pip install plotly
-pip install scipy
-pip install requests
-pip install aiohttp
-pip install ib_insync
+sudo apt install python3-pandas -y
+sudo apt install python3-numpy -y
+pip install streamlit --break-system-packages
+sudo apt install python3-openpyxl -y
+pip install mplfinance --break-system-packages
+sudo apt install python3-plotly -y
+sudo apt install python3-scipy -y
+sudo apt install python3-requests -y
+sudo apt install python3-aiohttp -y
+pip install ib_insync --break-system-packages
 
 # --- Step 4: Creating Programs Folder and navigating to Desktop
 cd ../
@@ -66,3 +66,6 @@ curl -L "https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_ins
 
 # step 5: if using root, need to adjust settings in order for it to run
 #sed -i 's|Exec=/usr/bin/code %U|Exec=/usr/bin/code --no-sandbox --user-data-dir=/root/.vscode-root-user %U|' /usr/share/applications/code.desktop
+
+# step 6: Paste this into the desktop icon Launcher -> command  box to get the desktop icon to work
+#code --no-sandbox --user-data-dir=/root/.vscode-root-user
